@@ -39,22 +39,22 @@ int main()
 	else
 		computer = 'z';   //z is scissor
 
-	printf("\n\n\n\n\t\t\t\tEnter s for STONE, p for PAPER and z for SCISSOR\n\t\t\t\t\t\t\t");
+	printf("Enter s for STONE, p for PAPER and z for SCISSOR");
 
 	scanf("%c", &you);
 
 	result = game(you, computer);
 
 	if (result == -1) {
-		printf("\n\n\t\t\t\tGame Draw!\n");
+		printf("\n\nGame Draw!\n");
 	}
 	else if (result == 1) {
-		printf("\n\n\t\t\t\tWow! You have won the game!\n");
+		printf("\n\nWow! You have won the game!\n");
 	}
 	else { 
-		printf("\n\n\t\t\t\tOh! You have lost the game!\n");
+		printf("\n\ntOh! You have lost the game!\n");
 	}
-		printf("\t\t\t\tYOu choose : %c and Computer choose : %c\n",you, computer);
+		printf("Ou choose : %c and Computer choose : %c\n",you, computer);
 
 	return 0;
 }
